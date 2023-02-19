@@ -69,12 +69,18 @@
                 <div class="col-3">
 
                     <div class="d-flex">
-                        <div class="search"> search
+                       
+                        <div class="search"> 
+                            <div class="inputDiv">
+                                <input class="inputSearch" type="text" placeholder="search">
+                            </div>
+
                             <a href=""><img src="images/searchWhite.png" alt="search"></a>
                         </div>
 
 
                         <div class="cart">
+                            <div id="products-count">0</div>
                             <a href="">
                                 <img src="images/cart.png" alt="cart">
                             </a>
@@ -93,7 +99,34 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-3">filter</div>
+                <div class="col-3">
+                    <div class="filter">
+                        <ul class="deviseType"> <p> Device Type</p>
+                            <li><input type="checkbox" id="laptop"> <label for="laptop">Laptop</label></li>
+                            <li><input type="checkbox" id="tablet"> <label for="tablet">Tablet</label></li>
+                        </ul>
+                        
+                        <ul class="color"> <p> Color</p>
+                            <li> <input type="checkbox" id="black">  <label for="black">Black</label> </li>
+                            <li> <input type="checkbox" id="red"> <label for="red">Red</label></li>
+                            <li> <input type="checkbox" id="green"> <label for="green">Green</label></li>
+                            <li> <input type="checkbox" id="blue"> <label for="blue">Blue</label></li>
+                            <li> <input type="checkbox" id="orange"> <label for="orange">Orange</label></li>
+                        </ul> <br>
+                     
+
+                        <ul class="ram">  <p>Ram</p>
+                            <li> <input type="checkbox" id="1gb"> <label for="1gb">1GB</label></li>
+                            <li> <input type="checkbox" id="2gb"> <label for="2gb">2GB</label></li>
+                            <li> <input type="checkbox" id="4gb"> <label for="4gb">4GB</label></li>
+                            <li> <input type="checkbox" id="6gb"> <label for="6gb">6GB</label></li>
+                            <li> <input type="checkbox" id="8gb"> <label for="8gb">8GB</label></li>
+                       Show more options...
+
+                       <button class="submit">Submit</button>
+
+                    </div>
+                </div>
 
 
                 <div class="col-9">
@@ -103,7 +136,7 @@
                             <div class="breadcrumbs">
                                 <ul>
                                     <li>
-                                        <a href="">Home pages</a>
+                                        <a href="">Home page > Products > Laptop and Tablets</a>
                                     </li>
                                 </ul>
                             </div>
@@ -112,9 +145,20 @@
 
                     <div class="row">
                         <div class="col-8"> Laptops and tablets</div>
+
+
                         <div class="col-4">
+
                             <div class="sort">
-                                Sort
+                                <ul class="sortByPrice">
+                                    <li>  <a href="">sort by price </a> 
+                                        <ul class="subSort">
+                                            <li> <a href="">sort by name</a> </li>
+                                            <li> <a href="">sort by date</a> </li>
+                                            <li> <a href="">sort by popularity</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -143,6 +187,12 @@
                                 </div>
                                 <div class="product-price">
                                     $599 <sup>25</sup>
+                                </div>
+                                <div class="product-quantity">
+                                    <button class="decrement-button">-</button>
+                                    <input type="text" value="10">
+                                    <button class="increment-button">+</button>
+                                
                                 </div>
 
                                 <button class="btn-more-details">More details</button>
@@ -400,6 +450,29 @@
 
 
     <footer class="footer">Footer</footer>
+
+
+    <!-- <div class="modal">
+        <div class="modal-block">
+            <form>
+                <div class="btn-wrap">
+                    <div class="btn-close">X</div>
+                </div>
+                
+                <h3>Please call for the details</h3>
+                <div class="form-field">
+                    <input type="text" placeholder="Your name">
+                </div>
+                <div class="form-field">
+                    <input type="text" placeholder="Your phone">
+                </div>
+                <button>send</button>
+            </form>
+        </div>
+    </div> -->
+
+
+    <script  src="app.js"></script>
 </body>
 
 </html>
